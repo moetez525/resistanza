@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistenza Roleplay | S1</title>
+    <meta name="description"
+        content="Join Resistenza Roleplay — the ultimate serious FiveM roleplay experience. Enter Majan City, a world of immersive storytelling, custom scripts, and a thriving underground economy. The Resistance begins 23/05/2026.">
+    <meta name="keywords" content="FiveM, Roleplay, Resistenza, , GTA V, Serious RP">
+    <meta name="theme-color" content="#000000">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ==================== NOISE OVERLAY ==================== -->
+    <div class="noise-overlay"></div>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="logo.png" alt="Resistenza Roleplay" class="nav-logo-img">
+                <span class="nav-logo-text">RESISTENZA</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#rules" class="nav-link">Rules</a></li>
+                <li><a href="#join" class="nav-link">Join Us</a></li>
+                <li><a href="#staff" class="nav-link">Staff</a></li>
+                <li><a href="#store" class="nav-link">Store</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== FLOATING SIDEBAR ==================== -->
+    <aside class="floating-sidebar" id="floatingSidebar">
+        <a href="https://discord.gg/SnPBvnq7xx" target="_blank" rel="noopener noreferrer" class="sidebar-icon"
+            title="Discord">
+            <i class="fab fa-discord"></i>
+        </a>
+        <a href="https://tiktok.com/" target="_blank" rel="noopener noreferrer" class="sidebar-icon" title="TikTok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+    </aside>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="hero">
+        <div class="hero-parallax" id="heroParallax">
+            <img src="hero-bg.png" alt="" class="hero-bg-img" loading="eager">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <img src="logo.png" alt="Resistenza Roleplay Logo" class="hero-logo" id="heroLogo">
+            <div class="hero-headlines">
+                <h1 class="hero-title" id="heroTitle">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="cursor">|</span>
+                </h1>
+                <p class="hero-subtitle glitch-text" data-text="THE RESISTANCE">THE RESISTANCE</p>
+            </div>
+            <div class="grand-opening" id="grandOpening">
+                <p class="opening-label">THE RESISTANCE BEGINS</p>
+                <p class="opening-date">23 / 05 / 2026 <span class="at-sign">@</span> 21:00</p>
+                <div class="countdown" id="countdown">
+                    <div class="countdown-block">
+                        <span class="countdown-value" id="countDays">00</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-block">
+                        <span class="countdown-value" id="countHours">00</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-block">
+                        <span class="countdown-value" id="countMinutes">00</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-block">
+                        <span class="countdown-value" id="countSeconds">00</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FEATURES SECTION ==================== -->
+    <section class="section features" id="features">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <p class="section-tag">THE EXPERIENCE</p>
+                <h2 class="section-title">What Awaits <span class="text-red">You</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card glass-card" data-animate>
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="feature-title">Custom Scripts</h3>
+                    <p class="feature-desc">Innovative, server-exclusive mechanics built from the ground up. Experience
+                        gameplay you won't find anywhere else.</p>
+                </div>
+                <div class="feature-card glass-card" data-animate>
+                    <div class="feature-icon">
+                        <i class="fas fa-theater-masks"></i>
+                    </div>
+                    <h3 class="feature-title">Serious Roleplay</h3>
+                    <p class="feature-desc">Strict immersion and high-quality storytelling. Every interaction matters in
+                        our deep, narrative-driven world.</p>
+                </div>
+                <div class="feature-card glass-card" data-animate>
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="feature-title">Optimized Performance</h3>
+                    <p class="feature-desc">Rock-solid 144 FPS stability with zero lag. Our infrastructure is engineered
+                        for buttery-smooth gameplay.</p>
+                </div>
+                <div class="feature-card glass-card" data-animate>
+                    <div class="feature-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3 class="feature-title">Active Economy</h3>
+                    <p class="feature-desc">Realistic job systems and black-market dynamics. Build empires, run
+                        businesses, or thrive in the underground.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== RULES SECTION ==================== -->
+    <section class="section rules" id="rules">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <p class="section-tag">THE CODE OF CONDUCT</p>
+                <h2 class="section-title">Server <span class="text-red">Rules</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="rules-grid">
+                <div class="rule-category" data-animate>
+                    <button class="rule-header" onclick="toggleRule(this)">
+                        <div class="rule-header-left">
+                            <span class="rule-number">01</span>
+                            <h3>General Conduct</h3>
+                        </div>
+                        <i class="fas fa-chevron-down rule-chevron"></i>
+                    </button>
+                    <div class="rule-body">
+                        <ul>
+                            <li>Respect all players and staff members at all times.</li>
+                            <li>No harassment, discrimination, or toxic behavior.</li>
+                            <li>English and Arabic are the primary languages in-character.</li>
+                            <li>Do not impersonate staff or other community members.</li>
+                            <li>Follow the chain of command when reporting issues.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rule-category" data-animate>
+                    <button class="rule-header" onclick="toggleRule(this)">
+                        <div class="rule-header-left">
+                            <span class="rule-number">02</span>
+                            <h3>Roleplay Standards</h3>
+                        </div>
+                        <i class="fas fa-chevron-down rule-chevron"></i>
+                    </button>
+                    <div class="rule-body">
+                        <ul>
+                            <li>Stay in character at all times while in the server.</li>
+                            <li>No Random Deathmatch (RDM) — you must have valid RP reason.</li>
+                            <li>No Vehicle Deathmatch (VDM) — vehicles are not weapons.</li>
+                            <li>No metagaming — do not use out-of-character information in RP.</li>
+                            <li>No powergaming — do not force actions on other players.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rule-category" data-animate>
+                    <button class="rule-header" onclick="toggleRule(this)">
+                        <div class="rule-header-left">
+                            <span class="rule-number">03</span>
+                            <h3>Criminal Activity</h3>
+                        </div>
+                        <i class="fas fa-chevron-down rule-chevron"></i>
+                    </button>
+                    <div class="rule-body">
+                        <ul>
+                            <li>All criminal RP must be well-organized and realistic.</li>
+                            <li>Robberies require a minimum number of online police officers.</li>
+                            <li>Gang wars must be approved and declared through RP channels.</li>
+                            <li>No cop-baiting or provoking police without valid RP reasons.</li>
+                            <li>Hostage situations have a maximum duration of 30 minutes.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rule-category" data-animate>
+                    <button class="rule-header" onclick="toggleRule(this)">
+                        <div class="rule-header-left">
+                            <span class="rule-number">04</span>
+                            <h3>New Life Rule</h3>
+                        </div>
+                        <i class="fas fa-chevron-down rule-chevron"></i>
+                    </button>
+                    <div class="rule-body">
+                        <ul>
+                            <li>After respawning, you forget all events leading to your death.</li>
+                            <li>You may not return to the area of your death for 15 minutes.</li>
+                            <li>You cannot seek revenge on the person who killed you.</li>
+                            <li>Medical RP can override NLR if properly roleplayed.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rule-category" data-animate>
+                    <button class="rule-header" onclick="toggleRule(this)">
+                        <div class="rule-header-left">
+                            <span class="rule-number">05</span>
+                            <h3>Communication</h3>
+                        </div>
+                        <i class="fas fa-chevron-down rule-chevron"></i>
+                    </button>
+                    <div class="rule-body">
+                        <ul>
+                            <li>Use proximity voice chat for in-character interactions.</li>
+                            <li>Radio frequency use must be realistic and limited.</li>
+                            <li>No soundboards, voice changers for trolling, or mic spam.</li>
+                            <li>Discord calls during RP are considered metagaming.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rule-category" data-animate>
+                    <button class="rule-header" onclick="toggleRule(this)">
+                        <div class="rule-header-left">
+                            <span class="rule-number">06</span>
+                            <h3>Cheating & Exploits</h3>
+                        </div>
+                        <i class="fas fa-chevron-down rule-chevron"></i>
+                    </button>
+                    <div class="rule-body">
+                        <ul>
+                            <li>Zero tolerance for hacking, modding, or exploiting.</li>
+                            <li>Report all bugs and glitches immediately to staff.</li>
+                            <li>Using any third-party tools for unfair advantage is a permanent ban.</li>
+                            <li>Duplication of items or money will result in a wipe and ban.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== JOIN US SECTION ==================== -->
+    <section class="section join" id="join">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <p class="section-tag">ANSWER THE CALL</p>
+                <h2 class="section-title">Join The <span class="text-red">Resistance</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="join-content" data-animate>
+                <p class="join-description">The streets of Majan City are waiting. Whether you're a hardened criminal, a
+                    corrupt cop, or a civilian just trying to survive — your story starts here.</p>
+                <div class="join-buttons">
+                    <a href="fivem://connect/YOUR_SERVER_IP" class="btn btn-primary btn-pulse" id="connectBtn">
+                        <i class="fas fa-gamepad"></i>
+                        <span>CONNECT TO FIVEM</span>
+                    </a>
+                    <a href="https://discord.gg/SnPBvnq7xx" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-secondary" id="discordBtn">
+                        <i class="fab fa-discord"></i>
+                        <span>JOIN THE DISCORD</span>
+                    </a>
+                </div>
+                <div class="join-stats">
+                    <div class="stat-item">
+                        <span class="stat-value" data-count="500">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Members</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" data-count="128">0</span>
+                        <span class="stat-label">Max Slots</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" data-count="250">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Custom Scripts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== STAFF SECTION ==================== -->
+    <section class="section staff" id="staff">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <p class="section-tag">THE TEAM</p>
+                <h2 class="section-title">Our <span class="text-red">Staff</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Category A: Administration -->
+            <div class="staff-category" data-animate>
+                <h3 class="staff-category-title">
+                    <i class="fas fa-shield-halved"></i>
+                    Administration
+                </h3>
+                <div class="staff-grid">
+                    <div class="staff-card">
+                        <div class="staff-avatar-ring">
+                            <div class="staff-avatar">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                        </div>
+                        <h4 class="staff-name">Server Owner</h4>
+                        <p class="staff-role">Founder & CEO</p>
+                        <span class="staff-badge admin-badge">OWNER</span>
+                    </div>
+                    <div class="staff-card">
+                        <div class="staff-avatar-ring">
+                            <div class="staff-avatar">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <h4 class="staff-name">Co-Owner</h4>
+                        <p class="staff-role">Co-Founder & COO</p>
+                        <span class="staff-badge admin-badge">CO-OWNER</span>
+                    </div>
+                    <div class="staff-card">
+                        <div class="staff-avatar-ring">
+                            <div class="staff-avatar">
+                                <i class="fas fa-gavel"></i>
+                            </div>
+                        </div>
+                        <h4 class="staff-name">Head Admin</h4>
+                        <p class="staff-role">Head of Administration</p>
+                        <span class="staff-badge admin-badge">HEAD ADMIN</span>
+                    </div>
+                    <div class="staff-card">
+                        <div class="staff-avatar-ring">
+                            <div class="staff-avatar">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                        </div>
+                        <h4 class="staff-name">Senior Admin</h4>
+                        <p class="staff-role">Community Manager</p>
+                        <span class="staff-badge admin-badge">SR. ADMIN</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category B: Development -->
+            <div class="staff-category" data-animate>
+                <h3 class="staff-category-title">
+                    <i class="fas fa-code"></i>
+                    Development
+                </h3>
+                <div class="staff-grid">
+                    <div class="staff-card">
+                        <div class="staff-avatar-ring dev-ring">
+                            <div class="staff-avatar">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                        <h4 class="staff-name">Lead Developer</h4>
+                        <p class="staff-role">Full-Stack & FiveM</p>
+                        <span class="staff-badge dev-badge">LEAD DEV</span>
+                    </div>
+                    <div class="staff-card">
+                        <div class="staff-avatar-ring dev-ring">
+                            <div class="staff-avatar">
+                                <i class="fas fa-database"></i>
+                            </div>
+                        </div>
+                        <h4 class="staff-name">Backend Dev</h4>
+                        <p class="staff-role">Systems & Database</p>
+                        <span class="staff-badge dev-badge">BACKEND</span>
+                    </div>
+                    <div class="staff-card">
+                        <div class="staff-avatar-ring dev-ring">
+                            <div class="staff-avatar">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                        </div>
+                        <h4 class="staff-name">UI/UX Designer</h4>
+                        <p class="staff-role">Interface & Graphics</p>
+                        <span class="staff-badge dev-badge">DESIGNER</span>
+                    </div>
+                    <div class="staff-card">
+                        <div class="staff-avatar-ring dev-ring">
+                            <div class="staff-avatar">
+                                <i class="fas fa-car"></i>
+                            </div>
+                        </div>
+                        <h4 class="staff-name">Vehicle Dev</h4>
+                        <p class="staff-role">Cars & Handling</p>
+                        <span class="staff-badge dev-badge">VEHICLES</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== STORE SECTION ==================== -->
+    <section class="section store" id="store">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <p class="section-tag">ECONOMY</p>
+                <h2 class="section-title">Featured <span class="text-red">Packages</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="store-grid">
+                <div class="store-card" data-animate>
+                    <div class="store-card-ribbon">POPULAR</div>
+                    <div class="store-card-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="store-card-title">VIP Package</h3>
+                    <ul class="store-card-features">
+                        <li><i class="fas fa-check"></i> Priority queue access</li>
+                        <li><i class="fas fa-check"></i> Exclusive VIP vehicles</li>
+                        <li><i class="fas fa-check"></i> Custom license plates</li>
+                        <li><i class="fas fa-check"></i> VIP Discord role</li>
+                        <li><i class="fas fa-check"></i> Monthly in-game bonus</li>
+                    </ul>
+                    <div class="store-card-price">
+                        <span class="price-currency">$</span>
+                        <span class="price-amount">14.99</span>
+                        <span class="price-period">/mo</span>
+                    </div>
+                    <a href="#" class="btn btn-store">View Details</a>
+                </div>
+                <div class="store-card featured-store-card" data-animate>
+                    <div class="store-card-ribbon">BEST VALUE</div>
+                    <div class="store-card-icon">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <h3 class="store-card-title">Custom Cars Pack</h3>
+                    <ul class="store-card-features">
+                        <li><i class="fas fa-check"></i> 10 exclusive vehicles</li>
+                        <li><i class="fas fa-check"></i> Custom handling files</li>
+                        <li><i class="fas fa-check"></i> Unique liveries & wraps</li>
+                        <li><i class="fas fa-check"></i> Performance upgrades</li>
+                        <li><i class="fas fa-check"></i> Lifetime access</li>
+                    </ul>
+                    <div class="store-card-price">
+                        <span class="price-currency">$</span>
+                        <span class="price-amount">24.99</span>
+                        <span class="price-period">one-time</span>
+                    </div>
+                    <a href="#" class="btn btn-store">View Details</a>
+                </div>
+                <div class="store-card" data-animate>
+                    <div class="store-card-ribbon">NEW</div>
+                    <div class="store-card-icon">
+                        <i class="fas fa-skull-crossbones"></i>
+                    </div>
+                    <h3 class="store-card-title">Gang Pack</h3>
+                    <ul class="store-card-features">
+                        <li><i class="fas fa-check"></i> Gang HQ interior</li>
+                        <li><i class="fas fa-check"></i> Custom gang clothing</li>
+                        <li><i class="fas fa-check"></i> Weapon stash access</li>
+                        <li><i class="fas fa-check"></i> Territory markers</li>
+                        <li><i class="fas fa-check"></i> Gang vehicle livery</li>
+                    </ul>
+                    <div class="store-card-price">
+                        <span class="price-currency">$</span>
+                        <span class="price-amount">19.99</span>
+                        <span class="price-period">one-time</span>
+                    </div>
+                    <a href="#" class="btn btn-store">View Details</a>
+                </div>
+            </div>
+            <div class="store-cta" data-animate>
+                <a href="#" class="btn btn-primary">
+                    <i class="fas fa-store"></i>
+                    <span>VIEW FULL STORE</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" id="footer">
+        <div class="footer-glow"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="Resistenza Roleplay" class="footer-logo">
+                    <p class="footer-brand-text">The ultimate serious roleplay experience. Built by the community, for
+                        the community.</p>
+                    <div class="footer-socials">
+                        <a href="https://discord.gg/SnPBvnq7xx" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-discord"></i></a>
+                        <a href="https://tiktok.com/" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Information</h4>
+                    <ul>
+                        <li><a href="#store">Store</a></li>
+                        <li><a href="https://discord.gg/SnPBvnq7xx">Support</a></li>
+                        <li><a href="#rules">Rules</a></li>
+                        <li><a href="https://discord.gg/SnPBvnq7xx">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#join">Join Server</a></li>
+                        <li><a href="#staff">Staff</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Resistenza Roleplay. All rights reserved.</p>
+                <p class="footer-powered">Powered by <span class="text-red">Resistenza</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-ring"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
