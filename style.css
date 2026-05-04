@@ -108,7 +108,7 @@ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='htt
 .rule-chevron{color:var(--red);font-size:.8rem;transition:transform .3s ease}
 .rule-category.active .rule-chevron{transform:rotate(180deg)}
 .rule-body{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s ease;padding:0 25px;background:rgba(0,0,0,.3)}
-.rule-category.active .rule-body{max-height:500px;padding:15px 25px 20px}
+.rule-category.active .rule-body{max-height:2000px;padding:15px 25px 20px}
 .rule-body ul{list-style:none;display:flex;flex-direction:column;gap:10px}
 .rule-body li{font-size:.9rem;color:var(--light-grey);padding-left:18px;position:relative;line-height:1.6}
 .rule-body li::before{content:'';position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--red);box-shadow:0 0 6px rgba(255,0,0,.5)}
