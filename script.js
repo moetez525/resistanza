@@ -170,3 +170,45 @@ document.addEventListener('mouseenter', () => {
     customCursor.style.opacity = '1';
     customRing.style.opacity = '1';
 });
+
+// ==================== DISCORD MEMBER COUNT ====================
+const discordInviteUrl = 'https://discord.com/api/v10/invites/yv9VaH4yg?with_counts=true';
+const discordProxyProviders = [
+    'https://api.allorigins.win/raw?url=',
+    'https://api.allorigins.cf/raw?url=',
+    'https://thingproxy.freeboard.io/fetch/',
+    'https://jsonp.afeld.me/?url=',
+    'https://api.codetabs.com/v1/proxy?quest=',
+    'https://yacdn.org/proxy?url='
+];
+
+async function fetchDiscordMemberCount() {
+    const memberStat = document.querySelector('.stat-item .stat-value[data-count]');
+    if (!memberStat) return;
+
+    const encodedUrl = encodeURIComponent(discordInviteUrl);
+    for (const proxy of discordProxyProviders) {
+        const proxyUrl = proxy + encodedUrl;
+        try {
+            const response = await fetch(proxyUrl);
+            if (!response.ok) {
+                console.warn('Discord proxy failed:', proxyUrl, response.status);
+                continue;
+            }
+            const data = await response.json();
+            const memberCount = data.approximate_member_count;
+            if (typeof memberCount === 'number' && memberCount > 0) {
+                memberStat.dataset.count = memberCount;
+                memberStat.textContent = memberCount;
+                console.log('Discord member count loaded from proxy:', proxy, memberCount);
+                return;
+            }
+            console.warn('Discord response missing count for proxy:', proxy, data);
+        } catch (error) {
+            console.warn('Discord proxy error:', proxy, error.message || error);
+        }
+    }
+    console.warn('Discord member count could not be loaded from any proxy. Keeping default value.');
+}
+
+fetchDiscordMemberCount();
