@@ -34,7 +34,7 @@ window.addEventListener('scroll', () => {
 });
 
 // ==================== TYPING EFFECT ====================
-const phrases = ['Welcome to Resistenza RP', 'Welcome to Resistenza RP'];
+const phrases = ['Welcome to resistanza RP', 'Welcome to resistanza RP'];
 const typingEl = document.getElementById('typingText');
 let phraseIdx = 0, charIdx = 0, isDeleting = false;
 
@@ -60,21 +60,21 @@ typeEffect();
 
 // ==================== COUNTDOWN TIMER ====================
 const targetDate = new Date('2026-05-23T21:00:00').getTime();
+const countdownEl = document.getElementById('countdown');
 const countDays = document.getElementById('countDays');
 const countHours = document.getElementById('countHours');
 const countMinutes = document.getElementById('countMinutes');
 const countSeconds = document.getElementById('countSeconds');
+let countdownInterval;
 
 function updateCountdown() {
     const now = Date.now();
     const diff = targetDate - now;
 
     if (diff <= 0) {
-        countDays.textContent = '00';
-        countHours.textContent = '00';
-        countMinutes.textContent = '00';
-        countSeconds.textContent = '00';
+        if (countdownEl) countdownEl.remove();
         document.querySelector('.opening-label').textContent = 'THE RESISTANCE IS LIVE';
+        clearInterval(countdownInterval);
         return;
     }
 
@@ -89,7 +89,7 @@ function updateCountdown() {
     countSeconds.textContent = String(s).padStart(2, '0');
 }
 updateCountdown();
-setInterval(updateCountdown, 1000);
+countdownInterval = setInterval(updateCountdown, 1000);
 
 // ==================== PARALLAX EFFECT ====================
 const heroParallax = document.getElementById('heroParallax');
